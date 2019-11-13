@@ -1,8 +1,7 @@
 var express=require("express");
+var adminrouter=require("./admin");
 var app=express();
-app.use("/emp",(request,response)=>{
-response.send("hello world");
-});
-app.listen(4000,()=>{
+ app.use("/emp",adminrouter);
+app.listen(4001,()=>{
     console.log("server started");
 })
