@@ -3,6 +3,9 @@ var app=express();
 app.use("/emp",(request,response)=>{
 response.send("hello world");
 });
+app.use("/student",(request,response)=>{
+    response.send("hello future");
+    });
 app.listen(4000,()=>{
     console.log("server started");
 })
