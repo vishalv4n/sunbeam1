@@ -14,7 +14,10 @@ app.use("/student",(request,response)=>{
 app.listen(4000,()=>{
  app.use("/emp",adminrouter);
 
+ app.use("/emp",adminrouterapp.use("/emp",adminrouter);
+
  app.use("/emp",adminrouter
+
 
 app.listen(4001,()=>{
     console.log("server started");
